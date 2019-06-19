@@ -1,0 +1,37 @@
+
+package javaapplication4;
+import java.util.Scanner;
+public class JavaApplication4 
+{
+
+    public static void main(String[] args) 
+    {
+        Scanner s=new Scanner(System.in);
+        int i;
+        int id[]=new int[5];
+        System.out.println("Enter 5 numbers");
+        {
+            for(i=0;i<5;i++)
+            {
+                id[i]=s.nextInt();
+            }
+            System.out.println("Even numbers are");
+            for(i=0;i<5;i++)
+            {
+                if(id[i]%2==0)
+                {
+                    System.out.println(id[i]);
+                }
+            }
+            System.out.println("Odd numbers are");
+            for(i=0;i<5;i++)
+            {
+                if(id[i]%2!=0)
+                {
+                    System.out.println(id[i]);
+                }
+            }
+        }
+    }
+    
+}
